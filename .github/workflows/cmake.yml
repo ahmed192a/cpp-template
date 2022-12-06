@@ -41,9 +41,9 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: |
         ctest -C ${{env.BUILD_TYPE}}
-        cd ${{github.workspace}}/scripts
-        ./test.sh
-
+        ./test/test_factorial
+        ./test/test_hello
+        
     - name: Code Coverage
       working-directory: ${{github.workspace}}/build
       run: |
