@@ -1,0 +1,10 @@
+#pragma once
+#ifndef CONFIG_HPP_
+#define CONFIG_HPP_
+
+#define VERSION_MAJOR "@Python_project_VERSION_MAJOR@"
+#define VERSION_MINOR "@Python_project_VERSION_MINOR@"
+#define VERSION_PATCH "@Python_project_VERSION_PATCH@"
+#define VERSION "@Python_project_VERSION@"
+
+#endif // !CONFIG_HPP_
