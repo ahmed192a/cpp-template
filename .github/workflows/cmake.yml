@@ -19,6 +19,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    # install gcov and lcov and doxygen for code coverage
+    - name: Install dependencies
+      run: |
+        sudo apt-get install lcov
+        sudo apt-get install doxygen
+        sudo apt-get install graphviz
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
